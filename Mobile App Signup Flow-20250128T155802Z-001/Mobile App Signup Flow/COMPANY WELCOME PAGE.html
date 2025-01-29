@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <link rel="icon" type="image/png" href="BB.jpeg">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e5e9e5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .login-container {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 1px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .login-container img {
+            max-width: 150px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        .login-container h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+           
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 0px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        
+        .login-container p {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .login-container a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .login-container a:hover {
+            text-decoration: underline;
+        }
+
+        .social-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+
+        .social-buttons button {
+            border: none;
+            background: none;
+            cursor: pointer;
+            transition: transform 0.3s;
+            border-radius: 30px;
+        }
+
+        .social-buttons button img {
+            width: 50px;
+            height: 50px;
+            
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .social-buttons button:hover img {
+            transform: scale(1.1);
+        }
+
+        .email-login {
+            margin-top: 20px;
+        }
+
+        .email-login button {
+            padding: 12px;
+            background-color: #ff7e5f;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .email-login button:hover {
+            background-color: #0bf33d;
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Video -->
+    <video class="background-video" autoplay muted loop>
+        <source src="corporate video for IT company _ corporate video for Perfectial.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="login-container">
+        <img src="Bd.jpg" alt="BHARAT IT SOLUTIONS">
+        <h1>Welcome to Bharat IT Solutions</h1>
+
+        <!-- Social Buttons -->
+        <div class="social-buttons">
+            <button onclick="window.location.href='https://www.facebook.com/login'">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+            </button>
+            <button onclick="window.location.href='https://twitter.com/login'">
+                <img src="data:image/png;base64,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" alt="Twitter">
+            </button>
+            <button onclick="window.location.href='https://www.linkedin.com/login'">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn">
+            </button>
+            <button onclick="window.location.href='https://accounts.google.com/'">
+            <img src="data:image/png;base64,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" alt="Google">
+            </button>
+        </div>
+
+        <!-- Email Login -->
+        <div class="email-login">
+            <button onclick="window.location.href='http://127.0.0.1:5500/Mobile%20App%20Signup%20Flow/login%20page.html'"> Sign Up Email</button>
+        </div>
+
+        <p>Don't have an account? <a href="http://127.0.0.1:5500/Mobile%20App%20Signup%20Flow/login%20page.html">Login</a></p>
+    </div>
+</body>
+</html>
